@@ -28,6 +28,7 @@
 - [Infrastructure](#-infrastructure)
 - [Agents & Orchestration](#-agents--orchestration)
 - [Skills & Extensions](#-skills--extensions)
+- [MCP Servers](#-mcp-servers)
 - [Vector Databases](#-vector-databases)
 - [Observability & Monitoring](#-observability--monitoring)
 - [Datasets & Data Tools](#-datasets--data-tools)
@@ -44,15 +45,18 @@
 
 ## 🤖 Foundation Models
 
-Large language models, vision models, and multimodal AI systems.
+Leading open-source LLMs, vision models, and multimodal systems (2026).
 
 | Repo | Description | Stars |
 |------|-------------|-------|
 | [huggingface/transformers](https://github.com/huggingface/transformers) | State-of-the-art ML models for PyTorch, TensorFlow, and JAX | ![GitHub stars](https://img.shields.io/github/stars/huggingface/transformers?style=social) |
-| [meta-llama/llama](https://github.com/meta-llama/llama) | Meta's Llama foundation models | ![GitHub stars](https://img.shields.io/github/stars/meta-llama/llama?style=social) |
+| [QwenLM/Qwen2.5](https://github.com/QwenLM/Qwen2.5) | Premier multilingual model (29+ languages), 235B MoE with 22B active - Apache 2.0 | ![GitHub stars](https://img.shields.io/github/stars/QwenLM/Qwen2.5?style=social) |
+| [deepseek-ai/DeepSeek-V3](https://github.com/deepseek-ai/DeepSeek-V3) | 685B MoE activating 37B per token, beats GPT-5 on reasoning - MIT license | ![GitHub stars](https://img.shields.io/github/stars/deepseek-ai/DeepSeek-V3?style=social) |
+| [meta-llama/llama](https://github.com/meta-llama/llama) | Llama 4 foundation models (16B-400B params) for general reasoning | ![GitHub stars](https://img.shields.io/github/stars/meta-llama/llama?style=social) |
+| [mistralai/mistral-src](https://github.com/mistralai/mistral-src) | Mistral Large - optimized for speed and efficiency, runs on mobile | ![GitHub stars](https://img.shields.io/github/stars/mistralai/mistral-src?style=social) |
+| [THUDM/GLM-4](https://github.com/THUDM/GLM-4) | GLM-4 (744B) - S-tier model, 94.2% HumanEval, 73.8% SWE-bench | ![GitHub stars](https://img.shields.io/github/stars/THUDM/GLM-4?style=social) |
+| [google/gemma](https://github.com/google/gemma) | Gemma 4 (26B) - frontier intelligence at laptop scale, 85 tokens/sec on consumer hardware | ![GitHub stars](https://img.shields.io/github/stars/google/gemma?style=social) |
 | [openai/whisper](https://github.com/openai/whisper) | Robust speech recognition via large-scale weak supervision | ![GitHub stars](https://img.shields.io/github/stars/openai/whisper?style=social) |
-| [OpenBMB/MiniCPM](https://github.com/OpenBMB/MiniCPM) | Edge-side LLMs with on-device performance | ![GitHub stars](https://img.shields.io/github/stars/OpenBMB/MiniCPM?style=social) |
-| [THUDM/ChatGLM](https://github.com/THUDM/ChatGLM) | Open bilingual chat LLM | ![GitHub stars](https://img.shields.io/github/stars/THUDM/ChatGLM?style=social) |
 
 ## ⚙️ Infrastructure
 
@@ -87,7 +91,7 @@ Multi-agent frameworks, orchestration platforms, and agentic workflows.
 
 ## 🛠️ Skills & Extensions
 
-Extensible skills, plugins, and MCP servers for AI coding assistants.
+Extensible skills and plugins for AI coding assistants. **Discover 66,500+ skills at [SkillsMP.com](https://skillsmp.com)** - the largest marketplace for AI agent skills.
 
 | Repo | Description | Stars |
 |------|-------------|-------|
@@ -100,40 +104,56 @@ Extensible skills, plugins, and MCP servers for AI coding assistants.
 | [ComposioHQ/awesome-claude-plugins](https://github.com/ComposioHQ/awesome-claude-plugins) | Curated collection with security-sweep scanner and CCHub desktop app | ![GitHub stars](https://img.shields.io/github/stars/ComposioHQ/awesome-claude-plugins?style=social) |
 | [Lum1104/Understand-Anything](https://github.com/Lum1104/Understand-Anything) | Multi-agent pipeline building interactive knowledge graphs | ![GitHub stars](https://img.shields.io/github/stars/Lum1104/Understand-Anything?style=social) |
 
-## 🗄️ Vector Databases
 
-Specialized databases for embedding storage and similarity search.
+## 🔌 MCP Servers
+
+Model Context Protocol servers enabling AI models to connect with external tools and data. **Browse 20,100+ servers at [MCP.so](https://mcp.so)**.
 
 | Repo | Description | Stars |
 |------|-------------|-------|
-| [chroma-core/chroma](https://github.com/chroma-core/chroma) | AI-native open-source embedding database | ![GitHub stars](https://img.shields.io/github/stars/chroma-core/chroma?style=social) |
-| [milvus-io/milvus](https://github.com/milvus-io/milvus) | High-performance vector database for production AI | ![GitHub stars](https://img.shields.io/github/stars/milvus-io/milvus?style=social) |
-| [qdrant/qdrant](https://github.com/qdrant/qdrant) | Vector similarity search engine with extended filtering | ![GitHub stars](https://img.shields.io/github/stars/qdrant/qdrant?style=social) |
-| [weaviate/weaviate](https://github.com/weaviate/weaviate) | Cloud-native vector database with GraphQL interface | ![GitHub stars](https://img.shields.io/github/stars/weaviate/weaviate?style=social) |
-| [pgvector/pgvector](https://github.com/pgvector/pgvector) | Open-source vector similarity search for Postgres | ![GitHub stars](https://img.shields.io/github/stars/pgvector/pgvector?style=social) |
+| [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) | Official MCP server implementations from Anthropic - 76K+ stars | ![GitHub stars](https://img.shields.io/github/stars/modelcontextprotocol/servers?style=social) |
+| [wong2/awesome-mcp-servers](https://github.com/wong2/awesome-mcp-servers) | Curated list of Model Context Protocol servers | ![GitHub stars](https://img.shields.io/github/stars/wong2/awesome-mcp-servers?style=social) |
+| [microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp) | Browser automation MCP server - 30K+ stars | ![GitHub stars](https://img.shields.io/github/stars/microsoft/playwright-mcp?style=social) |
+| [github/github-mcp-server](https://github.com/github/github-mcp-server) | GitHub's official MCP server - 28K+ stars | ![GitHub stars](https://img.shields.io/github/stars/github/github-mcp-server?style=social) |
+| [PrefectHQ/fastmcp](https://github.com/PrefectHQ/fastmcp) | Python framework for building MCP servers and clients - 24K+ stars | ![GitHub stars](https://img.shields.io/github/stars/PrefectHQ/fastmcp?style=social) |
+| [upstash/context7](https://github.com/upstash/context7) | Up-to-date code documentation for LLMs - 52K+ stars | ![GitHub stars](https://img.shields.io/github/stars/upstash/context7?style=social) |
+
+## 🗄️ Vector Databases
+
+Production-grade vector databases for embedding storage and similarity search (2026).
+
+| Repo | Description | Stars |
+|------|-------------|-------|
+| [milvus-io/milvus](https://github.com/milvus-io/milvus) | Most popular (35K+ stars) - Massive scale, GPU-accelerated, millisecond search on trillion-vector collections | ![GitHub stars](https://img.shields.io/github/stars/milvus-io/milvus?style=social) |
+| [qdrant/qdrant](https://github.com/qdrant/qdrant) | Rust-based, best for real-time filtering - Advanced quantization, <10ms p50 latency | ![GitHub stars](https://img.shields.io/github/stars/qdrant/qdrant?style=social) |
+| [weaviate/weaviate](https://github.com/weaviate/weaviate) | Hybrid search + knowledge graphs - 92% recall at 150ms for 500M vectors | ![GitHub stars](https://img.shields.io/github/stars/weaviate/weaviate?style=social) |
+| [chroma-core/chroma](https://github.com/chroma-core/chroma) | Developer-first embedding database - Best for rapid prototyping, ~20ms p50 | ![GitHub stars](https://img.shields.io/github/stars/chroma-core/chroma?style=social) |
+| [pgvector/pgvector](https://github.com/pgvector/pgvector) | Vector similarity search for Postgres - Leverage existing SQL infrastructure | ![GitHub stars](https://img.shields.io/github/stars/pgvector/pgvector?style=social) |
 
 ## 📊 Observability & Monitoring
 
-Tracking, debugging, and monitoring LLM applications in production.
+LLM observability platforms for production monitoring and debugging (2026).
 
 | Repo | Description | Stars |
 |------|-------------|-------|
-| [langfuse/langfuse](https://github.com/langfuse/langfuse) | Open-source LLM engineering platform for observability and analytics | ![GitHub stars](https://img.shields.io/github/stars/langfuse/langfuse?style=social) |
-| [wandb/wandb](https://github.com/wandb/wandb) | ML experiment tracking, model versioning, and collaboration | ![GitHub stars](https://img.shields.io/github/stars/wandb/wandb?style=social) |
-| [mlflow/mlflow](https://github.com/mlflow/mlflow) | End-to-end ML lifecycle platform | ![GitHub stars](https://img.shields.io/github/stars/mlflow/mlflow?style=social) |
-| [langchain-ai/langsmith-sdk](https://github.com/langchain-ai/langsmith-sdk) | Developer platform for building production-grade LLM applications | ![GitHub stars](https://img.shields.io/github/stars/langchain-ai/langsmith-sdk?style=social) |
-| [traceloop/openllmetry](https://github.com/traceloop/openllmetry) | OpenTelemetry instrumentation for LLMs | ![GitHub stars](https://img.shields.io/github/stars/traceloop/openllmetry?style=social) |
+| [langfuse/langfuse](https://github.com/langfuse/langfuse) | Most used open source tool (21K+ stars) - Full tracing, evals, prompt mgmt, 50K events/month free | ![GitHub stars](https://img.shields.io/github/stars/langfuse/langfuse?style=social) |
+| [Helicone/helicone](https://github.com/Helicone/helicone) | Fastest setup (15 min) - Proxy-based, automatic cost tracking, 100K requests/month free | ![GitHub stars](https://img.shields.io/github/stars/Helicone/helicone?style=social) |
+| [langchain-ai/langsmith-sdk](https://github.com/langchain-ai/langsmith-sdk) | Best for LangChain users - Visual graphs of agent chains, 5K traces/month free | ![GitHub stars](https://img.shields.io/github/stars/langchain-ai/langsmith-sdk?style=social) |
+| [openlit/openlit](https://github.com/openlit/openlit) | OpenTelemetry standard - Works with Prometheus/Grafana/Jaeger, OTLP-compatible spans | ![GitHub stars](https://img.shields.io/github/stars/openlit/openlit?style=social) |
+| [mlflow/mlflow](https://github.com/mlflow/mlflow) | End-to-end ML lifecycle platform with experiment tracking and model versioning | ![GitHub stars](https://img.shields.io/github/stars/mlflow/mlflow?style=social) |
+| [wandb/wandb](https://github.com/wandb/wandb) | ML experiment tracking, model versioning, and team collaboration | ![GitHub stars](https://img.shields.io/github/stars/wandb/wandb?style=social) |
 
 ## 📚 Datasets & Data Tools
 
-Open datasets, data processing, and synthetic data generation.
+Dataset curation, synthetic data generation, and data processing for AI (2026).
 
 | Repo | Description | Stars |
 |------|-------------|-------|
-| [huggingface/datasets](https://github.com/huggingface/datasets) | Fast, cached datasets for ML with 100K+ datasets | ![GitHub stars](https://img.shields.io/github/stars/huggingface/datasets?style=social) |
-| [argilla-io/argilla](https://github.com/argilla-io/argilla) | Collaboration tool for AI engineers and domain experts to build datasets | ![GitHub stars](https://img.shields.io/github/stars/argilla-io/argilla?style=social) |
+| [huggingface/datasets](https://github.com/huggingface/datasets) | 230K+ datasets library with fast caching and processing | ![GitHub stars](https://img.shields.io/github/stars/huggingface/datasets?style=social) |
+| [argilla-io/argilla](https://github.com/argilla-io/argilla) | Collaboration platform for building high-quality datasets - Used by Red Cross, Loris.ai, Prolific | ![GitHub stars](https://img.shields.io/github/stars/argilla-io/argilla?style=social) |
+| [argilla-io/distilabel](https://github.com/argilla-io/distilabel) | Framework for scalable synthetic data and AI feedback pipelines based on verified research | ![GitHub stars](https://img.shields.io/github/stars/argilla-io/distilabel?style=social) |
+| [argilla-io/synthetic-data-generator](https://github.com/argilla-io/synthetic-data-generator) | Build datasets with natural language - 50 samples/min for text classification | ![GitHub stars](https://img.shields.io/github/stars/argilla-io/synthetic-data-generator?style=social) |
 | [togethercomputer/RedPajama-Data](https://github.com/togethercomputer/RedPajama-Data) | Open-source reproduction of LLaMA training dataset | ![GitHub stars](https://img.shields.io/github/stars/togethercomputer/RedPajama-Data?style=social) |
-| [LlamaEdge/LlamaEdge](https://github.com/LlamaEdge/LlamaEdge) | Open-source edge AI stack | ![GitHub stars](https://img.shields.io/github/stars/LlamaEdge/LlamaEdge?style=social) |
 
 ## ✅ Evaluation & Testing
 
