@@ -55,6 +55,10 @@ jobs:
           ENABLE_PDF_EXPORT: 0
           PYTHONWARNINGS: ignore
 
+      - name: Add .nojekyll
+        run: |
+          touch site/.nojekyll
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
