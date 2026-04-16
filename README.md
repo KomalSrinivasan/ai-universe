@@ -164,10 +164,10 @@ Retrieval-augmented generation and knowledge management systems.
 
 | Repo | Description | Stars |
 |------|-------------|-------|
-| [run-llama/llama_index](https://github.com/run-llama/llama_index) | Data framework for LLM applications | ![GitHub stars](https://img.shields.io/github/stars/run-llama/llama_index?style=social) |
+| [run-llama/llama_index](https://github.com/run-llama/llama_index) | Data framework for LLM applications with RAG capabilities | ![GitHub stars](https://img.shields.io/github/stars/run-llama/llama_index?style=social) |
 | [langchain-ai/langchain](https://github.com/langchain-ai/langchain) | Building applications with LLMs through composability | ![GitHub stars](https://img.shields.io/github/stars/langchain-ai/langchain?style=social) |
 | [QuivrHQ/quivr](https://github.com/QuivrHQ/quivr) | Your second brain utilizing generative AI | ![GitHub stars](https://img.shields.io/github/stars/QuivrHQ/quivr?style=social) |
-| [jerryjliu/gpt_index](https://github.com/jerryjliu/gpt_index) | LlamaIndex (GPT Index) original repository | ![GitHub stars](https://img.shields.io/github/stars/jerryjliu/gpt_index?style=social) |
+| [RAGFlow/ragflow](https://github.com/infiniflow/ragflow) | Open-source RAG engine based on deep document understanding | ![GitHub stars](https://img.shields.io/github/stars/infiniflow/ragflow?style=social) |
 
 ## 💬 Prompt Engineering
 
@@ -193,15 +193,32 @@ Security, safety tools, and alignment research for responsible AI.
 
 ## 👨‍💻 Developer Tools
 
-IDEs, code assistants, and development tools for AI-powered coding.
+AI-powered coding assistants, IDEs, and CLI tools for developers.
+
+### AI Coding Assistants (IDE Extensions)
 
 | Repo | Description | Stars |
 |------|-------------|-------|
+| [continuedev/continue](https://github.com/continuedev/continue) | Open-source autopilot for VS Code and JetBrains with chat and context awareness | ![GitHub stars](https://img.shields.io/github/stars/continuedev/continue?style=social) |
+| [cline/cline](https://github.com/cline/cline) | Autonomous AI coding agent for VS Code - 4M+ installs, 59K+ stars | ![GitHub stars](https://img.shields.io/github/stars/cline/cline?style=social) |
+| [TabbyML/tabby](https://github.com/TabbyML/tabby) | Self-hosted AI coding assistant with codebase indexing | ![GitHub stars](https://img.shields.io/github/stars/TabbyML/tabby?style=social) |
+| [Codeium/codeium.vim](https://github.com/Codeium/codeium.vim) | Free AI code completion for Vim/Neovim | ![GitHub stars](https://img.shields.io/github/stars/Codeium/codeium.vim?style=social) |
 | [github/copilot.vim](https://github.com/github/copilot.vim) | GitHub Copilot for Vim/Neovim | ![GitHub stars](https://img.shields.io/github/stars/github/copilot.vim?style=social) |
-| [getcursor/cursor](https://github.com/getcursor/cursor) | AI-first code editor | ![GitHub stars](https://img.shields.io/github/stars/getcursor/cursor?style=social) |
-| [continuedev/continue](https://github.com/continuedev/continue) | Open-source autopilot for VS Code and JetBrains | ![GitHub stars](https://img.shields.io/github/stars/continuedev/continue?style=social) |
-| [Codeium/codeium.vim](https://github.com/Codeium/codeium.vim) | Free AI code completion for Vim | ![GitHub stars](https://img.shields.io/github/stars/Codeium/codeium.vim?style=social) |
-| [TabbyML/tabby](https://github.com/TabbyML/tabby) | Self-hosted AI coding assistant | ![GitHub stars](https://img.shields.io/github/stars/TabbyML/tabby?style=social) |
+
+### AI Coding Agents (CLI Tools)
+
+| Repo | Description | Stars |
+|------|-------------|-------|
+| [paul-gauthier/aider](https://github.com/paul-gauthier/aider) | Terminal AI pair programmer with deep git integration - 39K stars, auto-commits every edit | ![GitHub stars](https://img.shields.io/github/stars/paul-gauthier/aider?style=social) |
+| [plandex-ai/plandex](https://github.com/plandex-ai/plandex) | Terminal AI agent with 2M token context window for large codebases | ![GitHub stars](https://img.shields.io/github/stars/plandex-ai/plandex?style=social) |
+| [opencode-ai/opencode](https://github.com/opencode-ai/opencode) | Open-source terminal AI agent - 95K+ stars, supports 75+ providers | ![GitHub stars](https://img.shields.io/github/stars/opencode-ai/opencode?style=social) |
+
+### AI-Powered Code Editors
+
+| Repo | Description | Stars |
+|------|-------------|-------|
+| [voideditor/void](https://github.com/voideditor/void) | Open-source Cursor alternative - VS Code fork with AI features built-in | ![GitHub stars](https://img.shields.io/github/stars/voideditor/void?style=social) |
+| [zed-industries/zed](https://github.com/zed-industries/zed) | High-performance multiplayer code editor with AI integration | ![GitHub stars](https://img.shields.io/github/stars/zed-industries/zed?style=social) |
 
 ## 🏭 Production AI
 
