@@ -5,8 +5,13 @@
 **The most comprehensive collection of AI tools, frameworks, and resources for developers**
 
 ![GitHub stars](https://img.shields.io/github/stars/KomalSrinivasan/ai-universe?style=social)
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Documentation](https://img.shields.io/badge/docs-live-brightgreen)
 
 *Everything you need to build, deploy, and scale AI applications*
+
+**🌐 [Live Documentation](https://komalsrinivasan.github.io/ai-universe/)** | **📖 [Getting Started](https://komalsrinivasan.github.io/ai-universe/guides/getting-started/)** | **🚀 [Quick Reference](https://komalsrinivasan.github.io/ai-universe/guides/quick-reference/)**
 
 **Curated by [Komal Vardhan Lolugu](https://komal.workiq.in/) — Lead Product Engineer, Agentic AI & Generative Models**
 
@@ -19,6 +24,20 @@
 [Contribute](#-contributing)
 
 </div>
+
+---
+
+## ✨ What's New
+
+**v1.0.0** - Complete Documentation Site Launch!
+- 🎨 **Beautiful Material Design** - Modern, responsive UI with dark/light mode
+- 🗂️ **Integrated Sidebar Navigation** - Easy browsing with table of contents
+- 📖 **15 Comprehensive Category Pages** - Deep dives into every AI domain
+- 🔍 **Powerful Search** - Find tools and techniques instantly
+- 📊 **Performance Benchmarks** - Real-world comparisons and metrics
+- 💻 **200+ Code Examples** - Production-ready snippets
+- 🏷️ **Version Management** - Incremental releases with changelogs
+- 🚀 **Auto-Deploy** - GitHub Actions CI/CD pipeline
 
 ---
 
@@ -99,6 +118,48 @@
 - **All entries verified for 2026**
 - **Performance metrics included**
 - **Active maintenance confirmed**
+
+---
+
+## 🔧 For Developers
+
+### Running Locally
+
+```bash
+# Clone repository
+git clone https://github.com/KomalSrinivasan/ai-universe.git
+cd ai-universe
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Serve locally
+mkdocs serve
+
+# Visit http://localhost:8000
+```
+
+### Creating Releases
+
+We use semantic versioning and automated release management:
+
+```bash
+# For bug fixes (1.0.0 → 1.0.1)
+./scripts/release.sh patch
+
+# For new features (1.0.0 → 1.1.0)
+./scripts/release.sh minor
+
+# For breaking changes (1.0.0 → 2.0.0)
+./scripts/release.sh major
+```
+
+This will:
+- ✅ Update VERSION file
+- ✅ Create git tag
+- ✅ Push to GitHub
+- ✅ Trigger auto-deployment
+- ✅ Create GitHub release with changelog
 
 ---
 
