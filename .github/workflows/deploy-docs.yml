@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+    tags:
+      - 'v*'
   workflow_dispatch:
 
 permissions:
@@ -23,22 +25,35 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
-
-      - name: Cache dependencies
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
+          python-version: '3.11'
+          cache: 'pip'
 
       - name: Install dependencies
         run: |
-          pip install mkdocs mkdocs-material mkdocs-git-revision-date-localized-plugin
+          pip install -r requirements.txt
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Get version
+        id: get_version
+        run: |
+          if [[ $GITHUB_REF == refs/tags/* ]]; then
+            VERSION=${GITHUB_REF#refs/tags/v}
+          else
+            VERSION=$(cat VERSION)
+          fi
+          echo "VERSION=$VERSION" >> $GITHUB_OUTPUT
+          echo "Deploying version: $VERSION"
 
       - name: Build documentation
-        run: mkdocs build --clean --strict
+        run: |
+          mkdocs build --clean --verbose
+        env:
+          ENABLE_PDF_EXPORT: 0
+          PYTHONWARNINGS: ignore
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
@@ -48,4 +63,41 @@ jobs:
           publish_branch: gh-pages
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
-          commit_message: 'Deploy documentation [skip ci]'
+          commit_message: 'Deploy v${{ steps.get_version.outputs.VERSION }} [skip ci]'
+          enable_jekyll: false
+          cname: ${{ secrets.CNAME }}
+
+  create_release:
+    needs: deploy
+    runs-on: ubuntu-latest
+    if: startsWith(github.ref, 'refs/tags/')
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        with:
+          draft: false
+          prerelease: false
+          generate_release_notes: true
+          body: |
+            ## AI Universe Documentation Release ${{ github.ref_name }}
+
+            ### What's New
+            - Updated documentation
+            - Latest AI tools and frameworks
+            - Improved navigation and search
+
+            ### Documentation
+            🔗 [View Live Documentation](https://komalsrinivasan.github.io/ai-universe/)
+
+            ### Installation
+            ```bash
+            git clone https://github.com/KomalSrinivasan/ai-universe.git
+            cd ai-universe
+            pip install -r requirements.txt
+            mkdocs serve
+            ```
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

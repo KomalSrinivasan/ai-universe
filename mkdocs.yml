@@ -11,7 +11,6 @@ copyright: Copyright &copy; 2026 Komal Vardhan Lolugu
 
 theme:
   name: material
-  custom_dir: overrides
   palette:
     # Light mode
     - media: "(prefers-color-scheme: light)"
@@ -35,6 +34,7 @@ theme:
     code: Roboto Mono
 
   features:
+    - announce.dismiss
     - navigation.instant
     - navigation.instant.progress
     - navigation.tracking
@@ -43,15 +43,20 @@ theme:
     - navigation.sections
     - navigation.expand
     - navigation.path
+    - navigation.indexes
     - navigation.top
     - navigation.footer
     - search.suggest
     - search.highlight
     - search.share
     - toc.follow
+    - toc.integrate
     - content.code.copy
     - content.code.annotate
     - content.tabs.link
+    - content.tooltips
+    - content.action.edit
+    - content.action.view
 
   icon:
     repo: fontawesome/brands/github
@@ -69,7 +74,14 @@ theme:
       example: octicons/beaker-16
       quote: octicons/quote-16
 
+extra_css:
+  - stylesheets/extra.css
+
 extra:
+  version:
+    provider: mike
+    default: latest
+
   social:
     - icon: fontawesome/solid/globe
       link: https://komal.workiq.in/
