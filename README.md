@@ -247,6 +247,21 @@ If you find this useful, please consider starring the repository to help others 
 
 ---
 
+## 👨‍💻 Author & Maintainer
+
+**Komal Vardhan Lolugu**
+Lead Product Engineer — Agentic AI & Generative Models
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-komal.workiq.in-blue?style=flat-square)](https://komal.workiq.in/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-komalvardhanlolugu-0077B5?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/komalvardhanlolugu/)
+[![GitHub](https://img.shields.io/badge/GitHub-komalSrinivasan-181717?style=flat-square&logo=github)](https://github.com/komalSrinivasan)
+[![Medium](https://img.shields.io/badge/Medium-komalvardhan-12100E?style=flat-square&logo=medium)](https://komalvardhan.medium.com/)
+[![Topmate](https://img.shields.io/badge/Topmate-Book%20Session-orange?style=flat-square)](https://topmate.io/komal_vardhan_lolugu)
+
+For bugs, questions, or collaboration — reach out via [LinkedIn](https://www.linkedin.com/in/komalvardhanlolugu/)
+
+---
+
 <div align="center">
 
 **Built with ❤️ by the AI community**
