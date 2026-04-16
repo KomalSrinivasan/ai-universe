@@ -8,6 +8,14 @@
 
 *Everything you need to build, deploy, and scale AI applications*
 
+**Curated by [Komal Vardhan Lolugu](https://komal.workiq.in/) — Lead Product Engineer, Agentic AI & Generative Models**
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-komal.workiq.in-blue?style=flat-square)](https://komal.workiq.in/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-komalvardhanlolugu-0077B5?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/komalvardhanlolugu/)
+[![GitHub](https://img.shields.io/badge/GitHub-komalSrinivasan-181717?style=flat-square&logo=github)](https://github.com/komalSrinivasan)
+[![Medium](https://img.shields.io/badge/Medium-komalvardhan-12100E?style=flat-square&logo=medium)](https://komalvardhan.medium.com/)
+[![Topmate](https://img.shields.io/badge/Topmate-Book%20Session-orange?style=flat-square)](https://topmate.io/komal_vardhan_lolugu)
+
 [Contribute](#-contributing) • [Share on Twitter](https://twitter.com/intent/tweet?text=Check%20out%20AI%20Universe%20-%20The%20most%20comprehensive%20collection%20of%20AI%20tools%20and%20frameworks!%20https://github.com/KomalSrinivasan/ai-universe)
 
 </div>
