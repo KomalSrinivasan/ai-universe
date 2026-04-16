@@ -202,7 +202,6 @@ AI-powered coding assistants, IDEs, and CLI tools for developers.
 | [continuedev/continue](https://github.com/continuedev/continue) | Open-source autopilot for VS Code and JetBrains with chat and context awareness | ![GitHub stars](https://img.shields.io/github/stars/continuedev/continue?style=social) |
 | [cline/cline](https://github.com/cline/cline) | Autonomous AI coding agent for VS Code - 4M+ installs, 59K+ stars | ![GitHub stars](https://img.shields.io/github/stars/cline/cline?style=social) |
 | [TabbyML/tabby](https://github.com/TabbyML/tabby) | Self-hosted AI coding assistant with codebase indexing | ![GitHub stars](https://img.shields.io/github/stars/TabbyML/tabby?style=social) |
-| [Codeium/codeium.vim](https://github.com/Codeium/codeium.vim) | Free AI code completion for Vim/Neovim | ![GitHub stars](https://img.shields.io/github/stars/Codeium/codeium.vim?style=social) |
 | [github/copilot.vim](https://github.com/github/copilot.vim) | GitHub Copilot for Vim/Neovim | ![GitHub stars](https://img.shields.io/github/stars/github/copilot.vim?style=social) |
 
 ### AI Coding Agents (CLI Tools)
