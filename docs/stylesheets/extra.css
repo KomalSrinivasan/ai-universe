@@ -7,6 +7,70 @@
   --md-accent-fg-color: #7c4dff;
 }
 
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, rgba(94, 53, 177, 0.05), rgba(124, 77, 255, 0.05));
+  border-radius: 1rem;
+  padding: 3rem 2rem;
+  margin: 2rem 0;
+  text-align: center;
+  border: 2px solid rgba(94, 53, 177, 0.1);
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, var(--md-primary-fg-color), var(--md-accent-fg-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-badges {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+  flex-wrap: wrap;
+}
+
+.hero-badges img {
+  height: 28px;
+  transition: transform 0.2s ease;
+}
+
+.hero-badges img:hover {
+  transform: scale(1.05);
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.social-badges {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1.5rem 0 0 0;
+  flex-wrap: wrap;
+}
+
+.social-badges img {
+  height: 20px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  opacity: 0.9;
+}
+
+.social-badges img:hover {
+  transform: translateY(-2px);
+  opacity: 1;
+}
+
 /* Enhanced homepage hero */
 .md-typeset h1 {
   font-weight: 700;
@@ -158,6 +222,63 @@ html {
   border-radius: 2rem;
 }
 
+/* Sidebar/TOC Enhancements */
+.md-sidebar--secondary {
+  border-left: 2px solid rgba(94, 53, 177, 0.1);
+}
+
+.md-nav--secondary .md-nav__title {
+  background: linear-gradient(135deg, var(--md-primary-fg-color), var(--md-accent-fg-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.md-nav--secondary .md-nav__link {
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.3rem;
+  transition: all 0.2s ease;
+  font-size: 0.85rem;
+}
+
+.md-nav--secondary .md-nav__link:hover {
+  background-color: rgba(94, 53, 177, 0.08);
+  padding-left: 1rem;
+}
+
+.md-nav--secondary .md-nav__link--active {
+  background: linear-gradient(90deg, rgba(94, 53, 177, 0.15), transparent);
+  border-left: 3px solid var(--md-primary-fg-color);
+  font-weight: 600;
+  color: var(--md-primary-fg-color) !important;
+}
+
+/* Primary navigation sidebar */
+.md-sidebar--primary {
+  border-right: 2px solid rgba(94, 53, 177, 0.1);
+}
+
+.md-nav--primary .md-nav__title {
+  font-weight: 700;
+  color: var(--md-primary-fg-color);
+}
+
+.md-nav--primary .md-nav__link--active {
+  color: var(--md-primary-fg-color) !important;
+  font-weight: 600;
+}
+
+/* Ensure sidebar is visible */
+@media screen and (min-width: 76.25em) {
+  .md-sidebar--secondary {
+    display: block;
+  }
+}
+
 /* Responsive improvements */
 @media screen and (max-width: 76.1875em) {
   .md-typeset .grid {
@@ -167,12 +288,25 @@ html {
   .md-typeset .feature-grid {
     grid-template-columns: 1fr;
   }
+
+  .hero-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero-section {
+    padding: 2rem 1rem;
+  }
 }
 
 /* Dark mode specific */
 [data-md-color-scheme="slate"] {
   --md-default-bg-color: #1a1a2e;
   --md-default-fg-color: #eee;
+}
+
+[data-md-color-scheme="slate"] .hero-section {
+  background: linear-gradient(135deg, rgba(94, 53, 177, 0.15), rgba(124, 77, 255, 0.15));
+  border-color: rgba(94, 53, 177, 0.3);
 }
 
 [data-md-color-scheme="slate"] .md-typeset .card {
@@ -187,6 +321,14 @@ html {
 
 [data-md-color-scheme="slate"] .md-typeset table:not([class]) {
   border-color: #3d3f5c;
+}
+
+[data-md-color-scheme="slate"] .md-sidebar--secondary {
+  border-left-color: rgba(94, 53, 177, 0.3);
+}
+
+[data-md-color-scheme="slate"] .md-sidebar--primary {
+  border-right-color: rgba(94, 53, 177, 0.3);
 }
 
 /* Loading animation */

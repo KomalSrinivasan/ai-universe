@@ -1,13 +1,38 @@
-# Welcome to AI Universe 🌌
+# AI Universe 🌌
 
-<div class="hero" markdown>
+<div class="hero-section" markdown>
 
-# The Most Comprehensive AI Developer Resource
+<div class="hero-content" markdown>
 
-Everything you need to build, deploy, and scale AI applications - all in one place.
+## The Most Comprehensive Collection of AI Tools & Resources
+
+**Everything you need to build, deploy, and scale AI applications**
+
+<div class="hero-badges">
+<a href="https://github.com/KomalSrinivasan/ai-universe"><img src="https://img.shields.io/github/stars/KomalSrinivasan/ai-universe?style=for-the-badge&logo=github&color=5e35b1" alt="GitHub stars"></a>
+<img src="https://img.shields.io/badge/version-1.0.0-5e35b1?style=for-the-badge" alt="Version">
+<img src="https://img.shields.io/badge/license-MIT-green?style=for-the-badge" alt="License">
+</div>
+
+<div class="hero-buttons">
 
 [:octicons-star-24: Star on GitHub](https://github.com/KomalSrinivasan/ai-universe){ .md-button .md-button--primary }
 [:material-lightning-bolt: Quick Start](guides/getting-started.md){ .md-button }
+[:material-book-open: Browse Categories](#-quick-navigation){ .md-button }
+
+</div>
+
+**Curated by [Komal Vardhan Lolugu](https://komal.workiq.in/)** — Lead Product Engineer, Agentic AI & Generative Models
+
+<div class="social-badges">
+<a href="https://komal.workiq.in/"><img src="https://img.shields.io/badge/Portfolio-komal.workiq.in-5e35b1?style=flat-square&logo=internet-explorer" alt="Portfolio"></a>
+<a href="https://www.linkedin.com/in/komalvardhanlolugu/"><img src="https://img.shields.io/badge/LinkedIn-komalvardhanlolugu-0077B5?style=flat-square&logo=linkedin" alt="LinkedIn"></a>
+<a href="https://github.com/komalSrinivasan"><img src="https://img.shields.io/badge/GitHub-komalSrinivasan-181717?style=flat-square&logo=github" alt="GitHub"></a>
+<a href="https://komalvardhan.medium.com/"><img src="https://img.shields.io/badge/Medium-komalvardhan-12100E?style=flat-square&logo=medium" alt="Medium"></a>
+<a href="https://topmate.io/komal_vardhan_lolugu"><img src="https://img.shields.io/badge/Topmate-Book%20Session-orange?style=flat-square" alt="Topmate"></a>
+</div>
+
+</div>
 
 </div>
 
