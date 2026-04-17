@@ -14,14 +14,16 @@ AI Universe provides a carefully curated collection of 110+ open-source AI tools
 
 ### What's Included
 
-- **Foundation Models** - Latest LLMs, vision models, and multimodal systems
-- **Infrastructure** - Training, inference, and optimization frameworks
-- **Developer Tools** - AI coding assistants and IDEs
-- **Vector Databases** - Embedding storage and semantic search
-- **Observability** - LLM monitoring and debugging tools
-- **RAG Systems** - Retrieval and knowledge management
-- **Production Tools** - MLOps, deployment, and serving platforms
-- **Safety & Alignment** - Security, guardrails, and ethical AI
+- [**Foundation Models**](https://komalsrinivasan.github.io/ai-universe/categories/foundation-models/) - Latest LLMs, vision models, and multimodal systems
+- [**Infrastructure**](https://komalsrinivasan.github.io/ai-universe/categories/infrastructure/) - Training, inference, and optimization frameworks
+- [**Developer Tools**](https://komalsrinivasan.github.io/ai-universe/categories/developer-tools/) - AI coding assistants and IDEs
+- [**Skills & Extensions**](https://komalsrinivasan.github.io/ai-universe/categories/skills-extensions/) - Plugins for AI assistants
+- [**MCP Servers**](https://komalsrinivasan.github.io/ai-universe/categories/mcp-servers/) - Model Context Protocol servers
+- [**Vector Databases**](https://komalsrinivasan.github.io/ai-universe/categories/vector-databases/) - Embedding storage and semantic search
+- [**Observability**](https://komalsrinivasan.github.io/ai-universe/categories/observability-monitoring/) - LLM monitoring and debugging tools
+- [**RAG & Knowledge**](https://komalsrinivasan.github.io/ai-universe/categories/rag-knowledge/) - Retrieval and knowledge management
+- [**Production AI**](https://komalsrinivasan.github.io/ai-universe/categories/production-ai/) - MLOps, deployment, and serving platforms
+- [**AI Safety**](https://komalsrinivasan.github.io/ai-universe/categories/ai-safety-alignment/) - Security, guardrails, and ethical AI
 
 [See all 16 categories →](https://komalsrinivasan.github.io/ai-universe/)
 
@@ -45,9 +47,9 @@ Visit http://localhost:8000 to view the documentation.
 
 The full documentation is available at [komalsrinivasan.github.io/ai-universe](https://komalsrinivasan.github.io/ai-universe/) and includes:
 
-- **Getting Started Guide** - Introduction to AI development and tool selection
-- **Quick Reference** - Find tools by use case and requirements
-- **Best Practices** - Production-ready patterns and recommendations
+- [**Getting Started Guide**](https://komalsrinivasan.github.io/ai-universe/guides/getting-started/) - Introduction to AI development and tool selection
+- [**Quick Reference**](https://komalsrinivasan.github.io/ai-universe/guides/quick-reference/) - Find tools by use case and requirements
+- [**Best Practices**](https://komalsrinivasan.github.io/ai-universe/guides/best-practices/) - Production-ready patterns and recommendations
 - **Category Deep Dives** - Detailed analysis of tools in each category
 
 ## Contributing
@@ -88,9 +90,9 @@ This will update the version, create a git tag, and trigger automated deployment
 
 ## Resources
 
-- **SkillsMP.com** - 66,500+ AI agent skills
-- **MCP.so** - 20,100+ Model Context Protocol servers
-- **Hugging Face** - 230K+ datasets, models, and spaces
+- [**SkillsMP.com**](https://skillsmp.com) - 66,500+ AI agent skills
+- [**MCP.so**](https://mcp.so) - 20,100+ Model Context Protocol servers
+- [**Hugging Face**](https://huggingface.co) - 230K+ datasets, models, and spaces
 
 ## License
 
