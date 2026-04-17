@@ -30,7 +30,7 @@ theme:
         name: Switch to light mode
 
   font:
-    text: Inter
+    text: Roboto Mono
     code: Roboto Mono
 
   features:
