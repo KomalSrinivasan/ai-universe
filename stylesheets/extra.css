@@ -1,77 +1,96 @@
-/* AI Universe - Claude-inspired Documentation Design */
+/* AI Universe - Komal's Brand Design System */
 
-/* ===========================
-   Color System
-   =========================== */
+/* ═══════════════════════════════════════════════════════════════════════════════
+   DESIGN TOKEN SYSTEM - Matching komal.workiq.in
+   ═══════════════════════════════════════════════════════════════════════════════ */
 
 :root {
-  /* Primary Brand Colors - Professional Blue-Gray */
-  --md-primary-fg-color: #1e293b;
-  --md-primary-fg-color--light: #334155;
-  --md-primary-fg-color--dark: #0f172a;
+  /* ── Backgrounds ─────────────────────────────────────────────────────────── */
+  --md-default-bg-color: #F6F5F2;          /* page background */
+  --md-default-bg-color--light: #FFFFFF;   /* card / panel background */
+  --md-default-bg-color--lighter: #F0EFEB; /* elevated inner element */
+  --md-surface-3: #E8E6E1;                 /* deepest inner element */
 
-  /* Accent Colors */
-  --md-accent-fg-color: #3b82f6;
-  --md-accent-fg-color--transparent: rgba(59, 130, 246, 0.1);
+  /* ── Borders ─────────────────────────────────────────────────────────────── */
+  --md-border-color: #E2DFD8;              /* default border */
+  --md-border-color--light: #D0CEC7;       /* stronger border */
+  --md-border-color--dark: #BFBCB4;        /* strongest border */
 
-  /* Background Colors */
-  --md-default-bg-color: #ffffff;
-  --md-default-bg-color--light: #f8fafc;
-  --md-default-bg-color--lighter: #f1f5f9;
+  /* ── Text ────────────────────────────────────────────────────────────────── */
+  --md-default-fg-color: #1C1B19;          /* primary text */
+  --md-default-fg-color--light: #6B6762;   /* muted label text */
+  --md-default-fg-color--lighter: #A09D97; /* faint / placeholder text */
 
-  /* Text Colors */
-  --md-default-fg-color: #1e293b;
-  --md-default-fg-color--light: #64748b;
-  --md-default-fg-color--lighter: #94a3b8;
+  /* ── Brand (Tomato Red) ──────────────────────────────────────────────────── */
+  --md-primary-fg-color: #FF6347;
+  --md-primary-fg-color--light: #FF856E;
+  --md-primary-fg-color--dark: #E5533E;
+  --md-accent-fg-color: #FF6347;
+  --md-accent-fg-color--transparent: rgba(255, 99, 71, 0.10);
 
-  /* Border Colors */
-  --md-border-color: #e2e8f0;
-  --md-border-color--light: #f1f5f9;
+  /* ── Code ────────────────────────────────────────────────────────────────── */
+  --md-code-bg-color: #F0EFEB;
+  --md-code-fg-color: #1C1B19;
 
-  /* Code Colors */
-  --md-code-bg-color: #f1f5f9;
-  --md-code-fg-color: #1e293b;
-
-  /* Sidebar Colors */
-  --md-sidebar-bg-color: #f8fafc;
+  /* ── Sidebar ─────────────────────────────────────────────────────────────── */
+  --md-sidebar-bg-color: #FFFFFF;
 }
 
 /* Dark Mode Colors */
 [data-md-color-scheme="slate"] {
-  --md-primary-fg-color: #e2e8f0;
-  --md-primary-fg-color--light: #cbd5e1;
-  --md-primary-fg-color--dark: #f8fafc;
+  /* ── Backgrounds ─────────────────────────────────────────────────────────── */
+  --md-default-bg-color: #0A0A0A;
+  --md-default-bg-color--light: #141414;
+  --md-default-bg-color--lighter: #1A1A1A;
+  --md-surface-3: #1F1F1F;
 
-  --md-accent-fg-color: #60a5fa;
-  --md-accent-fg-color--transparent: rgba(96, 165, 250, 0.1);
+  /* ── Borders ─────────────────────────────────────────────────────────────── */
+  --md-border-color: #242424;
+  --md-border-color--light: #2F2F2F;
+  --md-border-color--dark: #383838;
 
-  --md-default-bg-color: #0f172a;
-  --md-default-bg-color--light: #1e293b;
-  --md-default-bg-color--lighter: #334155;
+  /* ── Text ────────────────────────────────────────────────────────────────── */
+  --md-default-fg-color: #FFFFFF;
+  --md-default-fg-color--light: #9CA3AF;
+  --md-default-fg-color--lighter: #4B5563;
 
-  --md-default-fg-color: #e2e8f0;
-  --md-default-fg-color--light: #94a3b8;
-  --md-default-fg-color--lighter: #64748b;
+  /* ── Brand (unchanged) ───────────────────────────────────────────────────── */
+  --md-primary-fg-color: #FF6347;
+  --md-primary-fg-color--light: #FF856E;
+  --md-primary-fg-color--dark: #E5533E;
+  --md-accent-fg-color: #FF6347;
+  --md-accent-fg-color--transparent: rgba(255, 99, 71, 0.10);
 
-  --md-border-color: #334155;
-  --md-border-color--light: #1e293b;
+  /* ── Code ────────────────────────────────────────────────────────────────── */
+  --md-code-bg-color: #1A1A1A;
+  --md-code-fg-color: #FFFFFF;
 
-  --md-code-bg-color: #1e293b;
-  --md-code-fg-color: #e2e8f0;
-
-  --md-sidebar-bg-color: #1e293b;
+  /* ── Sidebar ─────────────────────────────────────────────────────────────── */
+  --md-sidebar-bg-color: #0D0D0D;
 }
 
-/* ===========================
-   Typography
-   =========================== */
+/* ═══════════════════════════════════════════════════════════════════════════════
+   BASE
+   ═══════════════════════════════════════════════════════════════════════════════ */
+
+html, body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+::selection {
+  background-color: var(--md-primary-fg-color);
+  color: #ffffff;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════════
+   TYPOGRAPHY
+   ═══════════════════════════════════════════════════════════════════════════════ */
 
 .md-typeset {
   font-size: 0.9375rem;
   line-height: 1.7;
   color: var(--md-default-fg-color);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0.01em;
 }
 
 .md-typeset h1 {
@@ -119,17 +138,17 @@
   color: var(--md-accent-fg-color);
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .md-typeset a:hover {
-  color: var(--md-primary-fg-color);
+  color: var(--md-primary-fg-color--dark);
   text-decoration: underline;
 }
 
-/* ===========================
-   Layout & Container
-   =========================== */
+/* ═══════════════════════════════════════════════════════════════════════════════
+   LAYOUT & CONTAINER
+   ═══════════════════════════════════════════════════════════════════════════════ */
 
 .md-container {
   max-width: 1440px;
@@ -140,15 +159,15 @@
 }
 
 .md-content__inner {
-  padding-top: 1rem;
+  padding-top: 1.5rem;
   padding-bottom: 3rem;
-  max-width: 48rem;
+  max-width: 50rem;
   margin: 0 auto;
 }
 
-/* ===========================
-   Sidebar - Primary Navigation
-   =========================== */
+/* ═══════════════════════════════════════════════════════════════════════════════
+   SIDEBAR - PRIMARY NAVIGATION
+   ═══════════════════════════════════════════════════════════════════════════════ */
 
 .md-sidebar--primary {
   background-color: var(--md-sidebar-bg-color);
@@ -165,7 +184,7 @@
   font-weight: 700;
   font-size: 0.75rem;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
   padding: 1.25rem 0.75rem 0.5rem;
 }
 
@@ -179,7 +198,7 @@
   font-size: 0.875rem;
   padding: 0.5rem 0.75rem;
   margin: 0.125rem 0.5rem;
-  border-radius: 0.375rem;
+  border-radius: 0.5rem;
   transition: all 0.2s ease;
 }
 
@@ -200,12 +219,12 @@
   font-size: 0.8125rem;
 }
 
-/* ===========================
-   Sidebar - Table of Contents
-   =========================== */
+/* ═══════════════════════════════════════════════════════════════════════════════
+   SIDEBAR - TABLE OF CONTENTS
+   ═══════════════════════════════════════════════════════════════════════════════ */
 
 .md-sidebar--secondary {
-  background-color: var(--md-default-bg-color);
+  background-color: var(--md-default-bg-color--light);
   border-left: 1px solid var(--md-border-color);
 }
 
@@ -214,7 +233,7 @@
   font-weight: 700;
   font-size: 0.6875rem;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
   padding: 1.25rem 0.75rem 0.75rem;
 }
 
@@ -238,12 +257,12 @@
   font-weight: 600;
 }
 
-/* ===========================
-   Header
-   =========================== */
+/* ═══════════════════════════════════════════════════════════════════════════════
+   HEADER
+   ═══════════════════════════════════════════════════════════════════════════════ */
 
 .md-header {
-  background-color: var(--md-default-bg-color);
+  background-color: var(--md-default-bg-color--light);
   color: var(--md-default-fg-color);
   box-shadow: 0 1px 0 0 var(--md-border-color);
   height: 3.5rem;
@@ -263,21 +282,21 @@
   color: var(--md-accent-fg-color);
 }
 
-/* ===========================
-   Search
-   =========================== */
+/* ═══════════════════════════════════════════════════════════════════════════════
+   SEARCH
+   ═══════════════════════════════════════════════════════════════════════════════ */
 
 .md-search__input {
-  background-color: var(--md-default-bg-color--light);
+  background-color: var(--md-default-bg-color);
   border: 1px solid var(--md-border-color);
-  border-radius: 0.375rem;
+  border-radius: 0.5rem;
   color: var(--md-default-fg-color);
   font-size: 0.875rem;
   padding: 0.5rem 2.5rem 0.5rem 2.5rem;
 }
 
 .md-search__input:focus {
-  background-color: var(--md-default-bg-color);
+  background-color: var(--md-default-bg-color--light);
   border-color: var(--md-accent-fg-color);
   outline: none;
   box-shadow: 0 0 0 3px var(--md-accent-fg-color--transparent);
@@ -287,15 +306,15 @@
   color: var(--md-default-fg-color--lighter);
 }
 
-/* ===========================
-   Code Blocks
-   =========================== */
+/* ═══════════════════════════════════════════════════════════════════════════════
+   CODE BLOCKS
+   ═══════════════════════════════════════════════════════════════════════════════ */
 
 .md-typeset code {
   background-color: var(--md-code-bg-color);
   color: var(--md-code-fg-color);
   padding: 0.125rem 0.375rem;
-  border-radius: 0.25rem;
+  border-radius: 0.375rem;
   font-size: 0.875em;
   font-weight: 500;
   border: 1px solid var(--md-border-color);
@@ -304,8 +323,8 @@
 .md-typeset pre {
   background-color: var(--md-code-bg-color);
   border: 1px solid var(--md-border-color);
-  border-radius: 0.5rem;
-  padding: 1rem;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
   overflow-x: auto;
 }
 
@@ -316,13 +335,13 @@
   font-size: 0.875rem;
 }
 
-/* ===========================
-   Tables
-   =========================== */
+/* ═══════════════════════════════════════════════════════════════════════════════
+   TABLES
+   ═══════════════════════════════════════════════════════════════════════════════ */
 
 .md-typeset table:not([class]) {
   border: 1px solid var(--md-border-color);
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   border-spacing: 0;
   width: 100%;
   font-size: 0.875rem;
@@ -330,7 +349,7 @@
 }
 
 .md-typeset table:not([class]) th {
-  background-color: var(--md-default-bg-color--light);
+  background-color: var(--md-default-bg-color--lighter);
   color: var(--md-default-fg-color);
   font-weight: 600;
   text-align: left;
@@ -340,7 +359,7 @@
 
 .md-typeset table:not([class]) td {
   padding: 0.75rem 1rem;
-  border-bottom: 1px solid var(--md-border-color--light);
+  border-bottom: 1px solid var(--md-border-color);
 }
 
 .md-typeset table:not([class]) tr:last-child td {
@@ -351,16 +370,16 @@
   background-color: var(--md-default-bg-color--lighter);
 }
 
-/* ===========================
-   Buttons
-   =========================== */
+/* ═══════════════════════════════════════════════════════════════════════════════
+   BUTTONS
+   ═══════════════════════════════════════════════════════════════════════════════ */
 
 .md-button {
   background-color: transparent;
   color: var(--md-accent-fg-color);
   border: 1px solid var(--md-accent-fg-color);
   padding: 0.5rem 1.25rem;
-  border-radius: 0.375rem;
+  border-radius: 0.5rem;
   font-weight: 600;
   font-size: 0.875rem;
   transition: all 0.2s ease;
@@ -370,6 +389,7 @@
   background-color: var(--md-accent-fg-color--transparent);
   color: var(--md-accent-fg-color);
   text-decoration: none;
+  transform: translateY(-1px);
 }
 
 .md-button--primary {
@@ -379,21 +399,24 @@
 }
 
 .md-button--primary:hover {
-  background-color: var(--md-primary-fg-color);
-  border-color: var(--md-primary-fg-color);
+  background-color: var(--md-primary-fg-color--dark);
+  border-color: var(--md-primary-fg-color--dark);
   color: white;
+  transform: translateY(-1px);
 }
 
-/* ===========================
-   Admonitions
-   =========================== */
+/* ═══════════════════════════════════════════════════════════════════════════════
+   ADMONITIONS
+   ═══════════════════════════════════════════════════════════════════════════════ */
 
 .md-typeset .admonition {
   border-left: 4px solid var(--md-accent-fg-color);
-  border-radius: 0.375rem;
+  border-radius: 0.5rem;
   background-color: var(--md-accent-fg-color--transparent);
   padding: 1rem;
   margin: 1.5rem 0;
+  border: 1px solid var(--md-border-color);
+  border-left-width: 4px;
 }
 
 .md-typeset .admonition-title {
@@ -403,9 +426,9 @@
   margin-bottom: 0.5rem;
 }
 
-/* ===========================
-   Cards & Grid
-   =========================== */
+/* ═══════════════════════════════════════════════════════════════════════════════
+   CARDS & GRID
+   ═══════════════════════════════════════════════════════════════════════════════ */
 
 .md-typeset .grid {
   display: grid;
@@ -415,22 +438,22 @@
 }
 
 .md-typeset .card {
-  background-color: var(--md-default-bg-color);
+  background-color: var(--md-default-bg-color--light);
   border: 1px solid var(--md-border-color);
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   padding: 1.5rem;
   transition: all 0.2s ease;
 }
 
 .md-typeset .card:hover {
   border-color: var(--md-accent-fg-color);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 12px rgba(255, 99, 71, 0.1);
   transform: translateY(-2px);
 }
 
-/* ===========================
-   Footer
-   =========================== */
+/* ═══════════════════════════════════════════════════════════════════════════════
+   FOOTER
+   ═══════════════════════════════════════════════════════════════════════════════ */
 
 .md-footer {
   background-color: var(--md-sidebar-bg-color);
@@ -445,39 +468,21 @@
   color: var(--md-accent-fg-color);
 }
 
-/* ===========================
-   Breadcrumbs
-   =========================== */
-
-.md-header__topic {
-  font-size: 0.875rem;
-  color: var(--md-default-fg-color--light);
-}
-
-/* ===========================
-   Utilities
-   =========================== */
+/* ═══════════════════════════════════════════════════════════════════════════════
+   UTILITIES
+   ═══════════════════════════════════════════════════════════════════════════════ */
 
 .text-center {
   text-align: center;
 }
 
-.mt-4 {
-  margin-top: 1.5rem;
-}
-
-.mb-4 {
-  margin-bottom: 1.5rem;
-}
-
-/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
 
-/* ===========================
-   Responsive Design
-   =========================== */
+/* ═══════════════════════════════════════════════════════════════════════════════
+   RESPONSIVE DESIGN
+   ═══════════════════════════════════════════════════════════════════════════════ */
 
 @media screen and (max-width: 76.1875em) {
   .md-content__inner {
@@ -495,29 +500,9 @@ html {
   }
 }
 
-/* ===========================
-   Homepage Specific
-   =========================== */
-
-.homepage-hero {
-  background-color: var(--md-default-bg-color--light);
-  border: 1px solid var(--md-border-color);
-  border-radius: 0.75rem;
-  padding: 3rem 2rem;
-  margin: 2rem 0;
-  text-align: center;
-}
-
-.homepage-hero h1 {
-  margin-bottom: 1rem;
-}
-
-.homepage-hero p {
-  font-size: 1.125rem;
-  color: var(--md-default-fg-color--light);
-  max-width: 42rem;
-  margin: 0 auto 2rem;
-}
+/* ═══════════════════════════════════════════════════════════════════════════════
+   HOMEPAGE SPECIFIC
+   ═══════════════════════════════════════════════════════════════════════════════ */
 
 .badge-container {
   display: flex;
@@ -529,4 +514,36 @@ html {
 
 .badge-container img {
   height: 20px;
+  transition: transform 0.2s ease;
+}
+
+.badge-container img:hover {
+  transform: scale(1.05);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════════
+   SCROLLBAR STYLING
+   ═══════════════════════════════════════════════════════════════════════════════ */
+
+.md-sidebar__scrollwrap {
+  scrollbar-width: thin;
+  scrollbar-color: var(--md-border-color--light) transparent;
+}
+
+.md-sidebar__scrollwrap::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+.md-sidebar__scrollwrap::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.md-sidebar__scrollwrap::-webkit-scrollbar-thumb {
+  background: var(--md-border-color--light);
+  border-radius: 99px;
+}
+
+.md-sidebar__scrollwrap::-webkit-scrollbar-thumb:hover {
+  background: var(--md-border-color--dark);
 }
